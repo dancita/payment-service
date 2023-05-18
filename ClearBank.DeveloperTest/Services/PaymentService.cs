@@ -36,7 +36,7 @@ namespace ClearBank.DeveloperTest.Services
 
                 case PaymentScheme.Chaps:
                     PaymentResultExtensions.SetSuccessByPaymentSchemesFlag(account, result, AllowedPaymentSchemes.Chaps);
-                    if (result.Success &&  account.Status != AccountStatus.Live)
+                    if (result.Success && account.Status != AccountStatus.Live)
                     {
                         result.Success = false;
                     }
